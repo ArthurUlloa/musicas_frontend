@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101014;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    border-bottom: 1px solid #292932;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+header a {
+    color: #c084fc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header a:hover {
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 55px 20px;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 550px;
+    background: #1b1b23;
+    border: 1px solid #30303b;
+    border-radius: 14px;
+    padding: 35px;
+}
+
+.subtitulo {
+    color: #a855f7;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.conteudo h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    color: #9999a5;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 14px;
+    background: #101014;
+    border: 1px solid #393945;
+    border-radius: 7px;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.campo input:focus {
+    border-color: #a855f7;
+}
+
+.campo input::placeholder {
+    color: #686875;
+}
+
+#botaoCadastrar {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background: #9333ea;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#botaoCadastrar:hover {
+    background: #7e22ce;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .conteudo {
+        padding: 25px 20px;
+    }
+}

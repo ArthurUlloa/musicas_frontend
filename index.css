@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101014;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    border-bottom: 1px solid #292932;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header h1 span {
+    color: #a855f7;
+}
+
+.botao {
+    background: #9333ea;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #7e22ce;
+}
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 70px auto;
+}
+
+.introducao {
+    margin-bottom: 40px;
+}
+
+.subtitulo {
+    color: #a855f7;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.introducao h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.introducao > p:last-child {
+    color: #9999a5;
+    font-size: 15px;
+}
+
+#listaMusicas {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.musica {
+    background: #1b1b23;
+    border: 1px solid #30303b;
+    border-left: 4px solid #a855f7;
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.musica:hover {
+    border-color: #a855f7;
+    transform: translateY(-3px);
+}
+
+.musica h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.artista {
+    color: #c084fc;
+    margin-bottom: 12px;
+}
+
+.detalhes {
+    color: #9999a5;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.acoes {
+    display: flex;
+    gap: 12px;
+}
+
+.editar,
+.apagar {
+    border: none;
+    padding: 9px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.editar {
+    background: #9333ea;
+    color: white;
+}
+
+.apagar {
+    background: #30202a;
+    color: #fb7185;
+}
+
+.editar:hover {
+    background: #7e22ce;
+}
+
+.apagar:hover {
+    background: #4a2534;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .botao {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    main {
+        width: 90%;
+        margin: 45px auto;
+    }
+
+    .introducao h2 {
+        font-size: 27px;
+    }
+}
