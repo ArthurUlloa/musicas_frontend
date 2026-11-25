@@ -3,48 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar música</title>
+    <title>Editar Música</title>
     <link rel="stylesheet" href="editar.css">
 </head>
 <body>
 
-    <header>
-        <p class="logo">Minhas <span>Músicas.</span></p>
-        <a href="index.html">Voltar para a lista</a>
-    </header>
-
     <main>
-        <section class="conteudo">
-            <p class="subtitulo">EDITAR MÚSICA</p>
-            <h1>Editar música</h1>
-            <p class="descricao">Altere as informações da música selecionada.</p>
+        <a class="voltar" href="index.html">Voltar para a lista</a>
 
-            <div class="campo">
-                <label for="titulo">Título</label>
-                <input type="text" id="titulo" placeholder="Nome da música">
-            </div>
+        <h1>Editar música</h1>
 
-            <div class="campo">
-                <label for="artista">Artista</label>
-                <input type="text" id="artista" placeholder="Nome do artista">
-            </div>
+        <section class="container">
 
-            <div class="campo">
-                <label for="genero">Gênero</label>
-                <input type="text" id="genero" placeholder="Ex: Rock, Sertanejo, Pop">
-            </div>
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" placeholder="Digite o título da música">
 
-            <div class="campo">
-                <label for="ano">Ano</label>
-                <input type="number" id="ano" placeholder="Ex: 2024">
-            </div>
+            <label for="artista">Artista</label>
+            <input type="text" id="artista" placeholder="Digite o nome do artista">
 
-            <div class="campo">
-                <label for="duracao">Duração em minutos</label>
-                <input type="number" id="duracao" placeholder="Ex: 5">
-            </div>
+            <label for="genero">Gênero</label>
+            <input type="text" id="genero" placeholder="Digite o gênero musical">
+
+            <label for="ano">Ano</label>
+            <input type="number" id="ano" placeholder="Digite o ano">
+
+            <label for="duracao">Duração em minutos</label>
+            <input type="number" id="duracao" placeholder="Ex: 5">
 
             <button id="botaoSalvar">Salvar alterações</button>
+
         </section>
     </main>
 
